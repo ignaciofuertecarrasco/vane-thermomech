@@ -1,0 +1,33 @@
+[build-system]
+requires = ["setuptools>=69"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "vanefea"
+version = "1.0.0"
+description = "CFD-to-FEA thermo-mechanical and modal analysis of a cooled turbine vane (CadQuery, gmsh, CalculiX)"
+readme = "README.md"
+requires-python = ">=3.10"
+license = "MIT"
+dependencies = ["numpy>=1.26", "scipy>=1.12", "matplotlib>=3.8", "gmsh>=4.13", "cadquery>=2.4", "h5py>=3.10",
+                "scikit-learn>=1.5"]
+
+[project.optional-dependencies]
+dev = ["pytest>=8", "ruff>=0.6"]
+
+[tool.setuptools.packages.find]
+include = ["vanefea*"]
+
+[tool.setuptools.package-data]
+vanefea = ["data/*.dat", "data/aerothermal/*/*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+markers = ["calculix: runs the CalculiX solver (ccx must be on the PATH)"]
+
+[tool.ruff]
+line-length = 120
+
+[tool.ruff.lint]
+select = ["E4", "E7", "E9", "F", "B", "W"]
+ignore = ["B905"]

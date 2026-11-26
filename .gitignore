@@ -1,0 +1,19 @@
+__pycache__/
+*.pyc
+build/
+*.egg-info/
+.pytest_cache/
+.ruff_cache/
+# large or regenerable outputs
+results/cad/*.stl
+
+# LaTeX build files
+docs/report/*.aux
+docs/report/*.log
+docs/report/*.out
+docs/report/*.toc
+docs/report/*.fls
+docs/report/*.fdb_latexmk
+
+# reports and papers are kept private
+docs/

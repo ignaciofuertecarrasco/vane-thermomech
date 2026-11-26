@@ -1,0 +1,31 @@
+{
+  "name": "sweep_v1",
+  "n_cases": 110,
+  "n_failed": 0,
+  "failed": [],
+  "sha256": "7855c58fc0bc6a16b615224877fbfc8458100e7b45c93b35ff51bd13aaff88fb",
+  "inputs": [
+    "n",
+    "ratio",
+    "f_start",
+    "f_end",
+    "coolant"
+  ],
+  "outputs": [
+    "T_max",
+    "T_mean",
+    "T_min",
+    "vm_max_core",
+    "vm_p99_core",
+    "U_max",
+    "f1",
+    "f2",
+    "f3",
+    "T_coolant_out",
+    "Q_gas_W",
+    "coolant_Mach",
+    "coolant_dp",
+    "mass",
+    "energy_balance_rel"
+  ]
+}

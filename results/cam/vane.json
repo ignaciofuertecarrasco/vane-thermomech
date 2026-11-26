@@ -1,0 +1,14 @@
+{
+  "gouge": {
+    "min_concave_radius": 9.636511329667648,
+    "tool_radius": 3.0,
+    "ok": true
+  },
+  "n_moves": 141,
+  "chord_tolerance_mm": 0.005,
+  "max_overcut_um": 5.4648166422675,
+  "max_material_left_um": 10.020007756093019,
+  "passages": 7,
+  "passage_L_over_d_max": 46.13750362048489,
+  "gcode_lines": 768
+}

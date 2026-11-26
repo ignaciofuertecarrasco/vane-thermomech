@@ -1,0 +1,9 @@
+# Lint configuration (https://docs.astral.sh/ruff/). Run with:  ruff check .
+line-length = 120
+extend-exclude = []
+
+[lint]
+select = ["E4", "E7", "E9", "F", "B", "W"]
+ignore = [
+    "B905",   # zip() without strict=: the zipped sequences are built with equal lengths by construction
+]
